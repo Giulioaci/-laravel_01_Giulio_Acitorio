@@ -1,7 +1,7 @@
 
 .header{
     background-image: url('media/cinema-3142025-napoli.ciryrumors.it_-1280x720.jpg');
-    height: 95vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,4 +23,12 @@
 .box{
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.aboutus{
+    background-color: black;
+}
+
+.imgg{
+    height: 350px;
 }

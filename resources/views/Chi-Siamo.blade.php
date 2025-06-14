@@ -25,6 +25,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/Contatti">Contatti</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/movies">Movies</a>
+        </li>
 </nav>
 <header>
     <div class="container-fluid header">
@@ -39,6 +42,25 @@
         </div>
     </div>
 </header>
+
+<section class="bg-dark">
+  <div class="container aboutus">
+      <div class="row" >
+        @foreach ($users as $user)
+            <div class="col-12 col-md-4">
+                    <div class="card" style="width: 20rem;">
+                     <div class="card-body">
+                      <h5 class="card-title">{{$user['name'] . " " . $user['surname']}}</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">{{$user['role']}}</h6>
+                      <a href="{{ route('ChiSiamodetail', ['name'=>$user['name']] )}}" class="card-link">Leggi di più</a>
+                    </div>
+                   </div>
+            </div>
+        @endforeach
+     </div>
+  </div>
+</section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,11 +1,9 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contatti</title>
+    <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
@@ -32,19 +30,11 @@
 </nav>
 <header>
     <div class="container-fluid header">
-        <div class="row h-100 justify-content-around align-items-center">
-            <div class="col-12 h-25 justify-content-center align-items-center">
-               <h2 class= "text-white text-color display-5 text-center">Contatti</h2>
-            </div>
-            <div class="class col-md-3 box d-flex flex-column justify-content-center align-items-center text-white">
-                <i class=" icon bi bi-whatsapp"></i>
-            </div>
-            <div class="class col-md-3 box d-flex flex-column justify-content-center align-items-center text-white">
-                <i class=" icon bi bi-instagram"></i>
-            </div>
-            <div class="class col-md-3 box d-flex flex-column justify-content-center align-items-center text-white">
-                <i class=" icon bi bi-facebook"></i>
-            </div>
+        <div class="row h-100">
+          <div class="col-md-6 col-12">
+            <h3 class ="text-white">{{$user['name']}} {{$user['surname']}}</h3>
+            <h4 class ="text-white">{{$user['role']}}</h4>
+          </div>
         </div>
     </div>
 </header>

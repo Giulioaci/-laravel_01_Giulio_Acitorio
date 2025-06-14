@@ -17,13 +17,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('Homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class= "nav-link active" aria-current="page" href="/Chi-Siamo">Chi Siamo</a>
+          <a class= "nav-link active" aria-current="page" href="{{ route('aboutus')}}">Chi Siamo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/Contatti">Contatti</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('Contacts')}}">Contatti</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ route('movielist')}}">Movies</a>
         </li>
 </nav>
 <header>

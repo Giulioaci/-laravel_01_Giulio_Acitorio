@@ -26,9 +26,13 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/Contatti">Contatti</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/movies">Movies</a>
-        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle colordrop" href="{{ route('movielist')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Movies
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ route('movielist')}}">I nostri film</a>
+          </li>
 </nav>
 <header>
     <div class="container-fluid header">

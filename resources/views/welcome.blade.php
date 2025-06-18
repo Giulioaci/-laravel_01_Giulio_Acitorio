@@ -25,18 +25,21 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ route('Contacts')}}">Contatti</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ route('movielist')}}">Movies</a>
-        </li>
-</nav>
-<header>
-    <div class="container-fluid header">
-        <div class="row h-100">
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle colordrop" href="{{ route('movielist')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Movies
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ route('movielist')}}">I nostri film</a></li>
+         </nav>
+         <header>
+          <div class="container-fluid header">
+           <div class="row h-100">
             <div class="col-12">
                 <h1 class="text.light display-1 fw-bold colorh1" >Blog</h1>
             </div>
-        </div>
-    </div>
+           </div>
+          </div>
 </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
